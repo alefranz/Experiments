@@ -30,8 +30,8 @@ The goal is simple: exercise the full MkDocs Material plus GitHub Pages flow wit
 
     ---
 
-    Push to `main`, let GitHub Actions run, and publish with `mkdocs gh-deploy --force`.
-    No custom deployment plumbing required.
+    Push to `main`, let GitHub Pages deploy from the official Actions workflow,
+    and verify the site updates without maintaining a `gh-pages` branch.
 
 -   :material-robot:{ .lg .middle } **LLM-friendly**
 
@@ -49,7 +49,7 @@ The goal is simple: exercise the full MkDocs Material plus GitHub Pages flow wit
 | Theme | MkDocs Material configuration, palette, icons, and search |
 | Navigation | Top-level pages plus nested sections under Migration |
 | Markdown features | Admonitions, tabs, tables, fenced code blocks, and anchors |
-| Deployment | GitHub Actions plus `gh-pages` publishing |
+| Deployment | Official GitHub Pages artifact upload and deploy actions |
 
 ## Quick start
 
@@ -70,3 +70,5 @@ Then open the local preview and verify navigation, search, code copy buttons, an
 ## Status
 
 This site exists to validate the documentation pipeline on a public repository before reusing the same setup elsewhere.
+
+Current deployment marker: **Official Pages workflow test - March 2026**.

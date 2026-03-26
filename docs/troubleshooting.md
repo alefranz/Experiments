@@ -57,4 +57,4 @@ Compare these two things first:
 - the committed contents of `mkdocs.yml`
 - the exact workflow command used for deployment
 
-The simplest path is usually the most reliable one: keep deployment close to `mkdocs gh-deploy --force` and avoid extra layers until the baseline works.
+If the workflow succeeds but the live site does not change, confirm the repository Pages source is set to GitHub Actions and not branch-based publishing.

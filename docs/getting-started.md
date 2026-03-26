@@ -56,18 +56,21 @@ This is a staging documentation site.
 
 ## Deploying to GitHub Pages
 
-The workflow in `.github/workflows/docs.yml` is intentionally minimal:
+The workflow in `.github/workflows/docs.yml` now follows the official GitHub Pages deployment pattern:
 
 ```yaml
+- uses: actions/configure-pages@v5
 - uses: actions/setup-python@v5
   with:
     python-version: '3.x'
 
 - run: pip install mkdocs-material
-- run: mkdocs gh-deploy --force
+- run: mkdocs build --strict
+- uses: actions/upload-pages-artifact@v3
+- uses: actions/deploy-pages@v4
 ```
 
-That keeps the test close to the simplest supported deployment path.
+That keeps the deployment inside the workflow instead of pushing generated files to a separate branch.
 
 ## Recommended checks
 
@@ -75,3 +78,4 @@ That keeps the test close to the simplest supported deployment path.
 - use search to verify the index builds properly
 - inspect code blocks to confirm copy buttons appear
 - verify the published URL includes the repository name segment
+- confirm the home page status shows `Official Pages workflow test - March 2026`

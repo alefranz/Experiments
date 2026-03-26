@@ -26,7 +26,7 @@ Maintain a public MkDocs Material site that is intentionally simple to deploy bu
 |------|----------|
 | Branding | Use `Experiments` only |
 | Purpose | Treat the repo as a staging site for docs pipeline validation |
-| Deployment | Preserve `mkdocs gh-deploy --force` unless a deliberate change is requested |
+| Deployment | Preserve the official Pages artifact upload and deploy workflow unless a deliberate change is requested |
 | Navigation | Keep at least one nested section to exercise deeper routing |
 | Content style | Prefer explicit headings, short paragraphs, tables, and runnable commands |
 

@@ -31,7 +31,7 @@ Contains the markdown source rendered into the published site.
 
 ### `.github/workflows/docs.yml`
 
-Publishes the site whenever `main` changes or when triggered manually.
+Builds the site on every push to `main`, uploads the generated artifact, and deploys it with the official GitHub Pages actions.
 
 ## Navigation contract
 
@@ -65,8 +65,10 @@ mkdocs serve
 
 ## Minimal publish workflow
 
+The workflow is responsible for deployment. Local validation should stop at build time:
+
 ```bash
-mkdocs gh-deploy --force
+mkdocs build --strict
 ```
 
 If this succeeds locally and inside GitHub Actions, the documentation pipeline is behaving as expected.
