@@ -1,0 +1,63 @@
+site_name: Experiments
+site_description: Staging site for validating MkDocs and GitHub Pages
+site_url: https://alefranz.github.io/Experiments/
+repo_url: https://github.com/alefranz/Experiments
+repo_name: alefranz/Experiments
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - navigation.footer
+    - navigation.instant
+    - navigation.sections
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Guide: api-guide.md
+  - Advanced Patterns: advanced-patterns.md
+  - Troubleshooting: troubleshooting.md
+  - Migration:
+    - From Existing Repo: migration/from-moq.md
+    - From Another Project: migration/from-nsubstitute.md
+    - LLM Reference: migration/llm-prompt.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alefranz/Experiments
