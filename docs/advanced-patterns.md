@@ -1,6 +1,10 @@
 # Advanced Patterns
 
-This page is intentionally feature-heavy. Its purpose is to exercise the parts of MkDocs Material that tend to reveal styling or rendering regressions.
+This page is intentionally feature-heavy. Its purpose is to exercise the parts of MkDocs Material that tend to reveal styling or rendering regressions. If you are looking for a more typical documentation style, check out the [index](index.md) and [getting started](getting-started.md) pages.
+
+## Why this matters
+
+The staging site is meant to be a close rehearsal for a real public documentation set. If the content is too simple, it may not reveal issues that would arise in a more realistic scenario. By including a variety of markdown features and structural elements, this page helps ensure that the publishing pipeline can handle the complexity of actual documentation.
 
 ## Admonitions
 
